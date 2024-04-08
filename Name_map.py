@@ -49,7 +49,7 @@ if desired_name in camera_mapping:
     desired_index = camera_mapping[desired_name] +1 #内臓カメラが index 0 になっているため、１を足す
     print("Desired Camera Index:", desired_index)    
 
-    # 作成したマップから取得したカメラのインデクスでカメラを開く
+    # 作成したマップから取得したカメラのindexでカメラを開く
     cap = cv2.VideoCapture(desired_index, cv2.CAP_DSHOW)
     
     if not cap.isOpened():
