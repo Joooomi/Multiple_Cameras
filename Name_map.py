@@ -46,7 +46,7 @@ print("Camera Mapping:", camera_mapping)
 # Friendly name で起動するカメラを選択
 desired_name = "USB2.0_Camera_Front"
 if desired_name in camera_mapping:
-    desired_index = camera_mapping[desired_name] +1 #内臓カメラがインデクス0になっているため、１を足す
+    desired_index = camera_mapping[desired_name] +1 #内臓カメラが index 0 になっているため、１を足す
     print("Desired Camera Index:", desired_index)    
 
     # 作成したマップから取得したカメラのインデクスでカメラを開く
